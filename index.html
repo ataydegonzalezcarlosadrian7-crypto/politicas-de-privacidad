@@ -3,92 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacidad - HiperControl Pro</title>
+    <title>Política de Privacidad - Registro de Glucosa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #2c3e50;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #f4f7f6;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
         }
-        .container {
+        .section-card {
             background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-        h1 {
-            color: #c0392b;
-            border-bottom: 2px solid #c0392b;
-            padding-bottom: 10px;
-            font-size: 28px;
-        }
-        h2 {
-            color: #2980b9;
-            margin-top: 30px;
-            font-size: 20px;
-        }
-        p, li {
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-        .last-update {
-            font-style: italic;
-            color: #7f8c8d;
-            margin-bottom: 30px;
-        }
-        .footer {
-            margin-top: 50px;
-            text-align: center;
-            font-size: 14px;
-            color: #95a5a6;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 leading-relaxed">
 
-<div class="container">
-    <h1>Política de Privacidad</h1>
-    <p class="last-update">Última actualización: 23 de marzo de 2026</p>
+    <div class="max-w-3xl mx-auto px-4 py-12">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-3xl font-black text-slate-900 mb-4 uppercase tracking-tight">Política de Privacidad</h1>
+            <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
+            <p class="mt-4 text-slate-500 font-medium text-sm">Actualizado: Marzo 2026</p>
+        </header>
 
-    <p>En <strong>HiperControl Pro</strong>, la privacidad de nuestros usuarios es nuestra máxima prioridad. Esta política describe cómo se maneja la información dentro de la aplicación desarrollada por <strong>Carlos Adrián Atayde González</strong>.</p>
+        <!-- Main Content -->
+        <div class="space-y-6">
+            
+            <!-- Datos Médicos y Privacidad -->
+            <section class="section-card border-l-8 border-emerald-500">
+                <h2 class="text-xl font-bold text-slate-900 mb-3 flex items-center">
+                    <span class="mr-2 text-emerald-600">🛡️</span> Datos de Salud y Glucosa
+                </h2>
+                <p>
+                    Nuestra aplicación está diseñada bajo un principio de <strong>Privacidad por Diseño</strong>. Tus registros de glucosa, niveles de azúcar, fechas y notas:
+                </p>
+                <ul class="list-disc ml-6 mt-3 space-y-2 text-slate-700">
+                    <li>Se almacenan <strong>exclusivamente</strong> en el <code class="bg-slate-100 px-1 rounded text-emerald-700">Local Storage</code> de tu navegador o dispositivo móvil.</li>
+                    <li>No se envían a ningún servidor externo ni se comparten con bases de datos en la nube.</li>
+                    <li>Nosotros no tenemos acceso a tus niveles de glucosa en ningún momento.</li>
+                </ul>
+            </section>
 
-    <h2>1. Información que recopilamos</h2>
-    <ul>
-        <li><strong>Datos de Salud:</strong> Registros de presión sistólica y diastólica introducidos manualmente por el usuario.</li>
-        <li><strong>Datos de Medicación:</strong> Nombres de fármacos y horarios de toma configurados para recordatorios.</li>
-        <li><strong>Contactos de Emergencia:</strong> Nombres y números telefónicos de familiares o médicos designados para la función SOS.</li>
-    </ul>
+            <!-- Monetización con Adsterra -->
+            <section class="section-card border-l-8 border-blue-500">
+                <h2 class="text-xl font-bold text-slate-900 mb-3 flex items-center">
+                    <span class="mr-2 text-blue-600">📢</span> Publicidad y Monetización
+                </h2>
+                <p>
+                    Utilizamos la red publicitaria <strong>Adsterra</strong> para mostrar anuncios en la aplicación. Este servicio nos permite mantener la herramienta gratuita para todos los usuarios.
+                </p>
+                <p class="mt-3">
+                    <strong>Uso de Cookies:</strong> Adsterra y sus socios pueden utilizar tecnologías como cookies y píxeles de seguimiento para recopilar información técnica (como dirección IP, tipo de dispositivo o geolocalización aproximada) con el fin de mostrar anuncios relevantes para ti.
+                </p>
+                <p class="mt-2 italic text-sm text-slate-500">
+                    Importante: Estos anuncios son independientes de tus datos de glucosa almacenados localmente; los anunciantes no tienen acceso a tus registros médicos.
+                </p>
+            </section>
 
-    <h2>2. Uso de la Información</h2>
-    <p>La aplicación utiliza estos datos exclusivamente para proporcionar las funciones de seguimiento, generación de reportes PDF y gestión de emergencias. <strong>No vendemos, alquilamos ni compartimos sus datos de salud con terceros.</strong></p>
+            <!-- Donaciones -->
+            <section class="section-card border-l-8 border-amber-500">
+                <h2 class="text-xl font-bold text-slate-900 mb-3 flex items-center">
+                    <span class="mr-2 text-amber-600">☕</span> Donaciones Voluntarias
+                </h2>
+                <p>
+                    La aplicación incluye opciones para realizar donaciones voluntarias con el fin de apoyar el mantenimiento del proyecto. 
+                </p>
+                <ul class="list-disc ml-6 mt-3 space-y-2 text-slate-700">
+                    <li>Las donaciones <strong>no son obligatorias</strong>; el acceso a todas las funciones principales sigue siendo gratuito.</li>
+                    <li>Los pagos se gestionan a través de plataformas de terceros seguras. No almacenamos información bancaria ni de tarjetas de crédito.</li>
+                </ul>
+            </section>
 
-    <h2>3. Almacenamiento y Seguridad</h2>
-    <ul>
-        <li><strong>Almacenamiento Local:</strong> Los datos se guardan directamente en el almacenamiento local del dispositivo mediante tecnología <em>localStorage</em>. Esto significa que usted tiene el control total sobre sus datos.</li>
-        <li><strong>Seguridad de los Datos:</strong> Dado que los datos no se sincronizan con servidores externos del desarrollador, la seguridad de sus registros depende de la seguridad física y digital de su dispositivo móvil.</li>
-    </ul>
+            <!-- Consejos de Salud -->
+            <section class="section-card border-l-8 border-red-500">
+                <h2 class="text-xl font-bold text-slate-900 mb-3 flex items-center">
+                    <span class="mr-2 text-red-600">⚠️</span> Aviso Legal de Salud
+                </h2>
+                <p class="font-bold text-red-900">
+                    Esta aplicación NO es un dispositivo médico ni un sustituto de la atención profesional.
+                </p>
+                <p class="mt-2">
+                    Los consejos, tips y recomendaciones sobre salud y diabetes son de carácter meramente informativo. Cualquier cambio en su dieta, medicación o estilo de vida debe ser supervisado por un médico calificado.
+                </p>
+            </section>
 
-    <h2>4. Servicios de Terceros</h2>
-    <p>La aplicación utiliza los siguientes servicios de terceros:</p>
-    <ul>
-        <li><strong>Anuncios:</strong> Se muestran anuncios a través de redes publicitarias externas para mantener la aplicación gratuita. Estos proveedores pueden recopilar identificadores de publicidad anónimos.</li>
-        <li><strong>Pagos y Donaciones:</strong> Usted interactúa directamente con los sistemas de seguridad de Amazon y PayPal. HiperControl Pro no recibe ni almacena datos bancarios o números de tarjeta.</li>
-    </ul>
+            <!-- Contacto -->
+            <section class="section-card bg-slate-900 text-white">
+                <h2 class="text-xl font-bold mb-3">Contacto</h2>
+                <p class="text-slate-300">
+                    Si tienes cualquier duda respecto a tu privacidad, puedes contactarnos directamente por correo electrónico:
+                </p>
+                <p class="mt-4 text-xl font-mono text-blue-400">
+                    adriancarlos267@gmail.com
+                </p>
+            </section>
 
-    <h2>5. Sus Derechos</h2>
-    <p>Usted puede eliminar todos sus datos en cualquier momento borrando el caché de la aplicación, limpiando los datos del navegador o desinstalando la aplicación de su dispositivo.</p>
+        </div>
 
-    <h2>6. Contacto</h2>
-    <p>Si tiene dudas sobre esta política, puede ponerse en contacto a través del correo electrónico: <strong>adriacarlos267@gmail.com</strong></p>
-
-    <div class="footer">
-        &copy; 2026 HiperControl Pro - Desarrollado por Carlos Adrián Atayde González.
+        <!-- Footer -->
+        <footer class="mt-12 text-center text-slate-400 text-xs">
+            <p>© 2026 App Registro de Glucosa. Todos los derechos reservados.</p>
+        </footer>
     </div>
-</div>
 
 </body>
 </html>
+
