@@ -3,135 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacidad - Diabetes Care Pro</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Política de Privacidad - HiperControl Pro</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f4f7f9;
         }
-        .section-card {
-            background: white;
-            border-radius: 1.5rem;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            border: 1px solid #f1f5f9;
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+        h1 { color: #c0392b; border-bottom: 2px solid #c0392b; padding-bottom: 10px; }
+        h2 { color: #2980b9; margin-top: 30px; }
+        p { margin-bottom: 15px; }
+        ul { margin-bottom: 15px; padding-left: 20px; }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .highlight { font-weight: bold; color: #2c3e50; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 leading-relaxed">
+<body>
 
-    <div class="max-w-3xl mx-auto px-6 py-12">
-        <!-- Header -->
-        <header class="text-center mb-12">
-            <div class="w-16 h-16 bg-sky-500 rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6 shadow-lg shadow-sky-200">
-                <i class="fas fa-shield-halved"></i>
-            </div>
-            <h1 class="text-3xl font-black text-slate-900 mb-4 uppercase tracking-tight">Política de Privacidad</h1>
-            <p class="text-sky-600 font-extrabold text-sm tracking-widest uppercase">Diabetes Care Pro</p>
-            <div class="h-1 w-12 bg-sky-200 mx-auto rounded-full mt-4"></div>
-            <p class="mt-4 text-slate-400 font-medium text-xs">Última actualización: Marzo 2026</p>
-        </header>
+<div class="container">
+    <h1>Política de Privacidad</h1>
+    <p>Última actualización: 28 de marzo de 2026</p>
 
-        <!-- Contenido Principal -->
-        <div class="space-y-6">
-            
-            <!-- Datos Médicos y Privacidad -->
-            <section class="section-card border-l-8 border-sky-500">
-                <h2 class="text-xl font-black text-slate-900 mb-4 flex items-center gap-3">
-                    <span class="text-sky-500"><i class="fas fa-lock"></i></span>
-                    Privacidad de Datos de Salud
-                </h2>
-                <p class="text-sm text-slate-600 mb-4">
-                    En <strong>Diabetes Care Pro</strong>, la privacidad de su salud es nuestra prioridad técnica. La aplicación funciona bajo un modelo de <strong>almacenamiento local descentralizado</strong>.
-                </p>
-                <ul class="space-y-3">
-                    <li class="flex gap-3 text-sm text-slate-700">
-                        <i class="fas fa-check-circle text-emerald-500 mt-1"></i>
-                        <span>Sus niveles de glucosa, fechas y notas se guardan <strong>exclusivamente</strong> en el <code>Local Storage</code> de su dispositivo.</span>
-                    </li>
-                    <li class="flex gap-3 text-sm text-slate-700">
-                        <i class="fas fa-check-circle text-emerald-500 mt-1"></i>
-                        <span><strong>Cero Servidores:</strong> No enviamos su información médica a la nube ni a bases de datos externas.</span>
-                    </li>
-                    <li class="flex gap-3 text-sm text-slate-700">
-                        <i class="fas fa-check-circle text-emerald-500 mt-1"></i>
-                        <span>Si usted borra los datos del navegador o desinstala la app, la información se eliminará permanentemente ya que nosotros no poseemos copias.</span>
-                    </li>
-                </ul>
-            </section>
+    <p>En <span class="highlight">HiperControl Pro</span>, valoramos su privacidad. Esta política describe cómo manejamos la información en nuestra aplicación móvil y sitio web.</p>
 
-            <!-- Monetización con Adsterra -->
-            <section class="section-card border-l-8 border-slate-900">
-                <h2 class="text-xl font-black text-slate-900 mb-4 flex items-center gap-3">
-                    <span class="text-slate-900"><i class="fas fa-ad"></i></span>
-                    Publicidad y Cookies
-                </h2>
-                <p class="text-sm text-slate-600">
-                    Para mantener esta herramienta gratuita y accesible, utilizamos la red publicitaria <strong>Adsterra</strong>.
-                </p>
-                <div class="mt-4 p-4 bg-slate-50 rounded-xl border border-slate-100">
-                    <p class="text-xs text-slate-500 leading-relaxed">
-                        <strong>Información Técnica:</strong> Adsterra puede recopilar datos no sensibles como su dirección IP, tipo de navegador y país para mostrar anuncios relevantes. Estos anunciantes <strong>NUNCA</strong> tienen acceso a sus registros de glucosa, ya que estos residen en una capa de almacenamiento inaccesible para scripts externos.
-                    </p>
-                </div>
-            </section>
+    <h2>1. Recopilación de Información</h2>
+    <p>Nuestra aplicación está diseñada para funcionar de forma privada y local:</p>
+    <ul>
+        <li><span class="highlight">Datos de Salud:</span> Los registros de presión arterial y medicamentos se almacenan exclusivamente en el almacenamiento local de su dispositivo (LocalStorage). No enviamos estos datos a servidores externos.</li>
+        <li><span class="highlight">Datos Personales:</span> No requerimos registro de cuenta ni recopilamos nombres, correos electrónicos o números de teléfono para el funcionamiento básico.</li>
+    </ul>
 
-            <!-- Donaciones -->
-            <section class="section-card border-l-8 border-amber-500">
-                <h2 class="text-xl font-black text-slate-900 mb-4 flex items-center gap-3">
-                    <span class="text-amber-500"><i class="fas fa-heart"></i></span>
-                    Apoyo y Donaciones
-                </h2>
-                <p class="text-sm text-slate-600 mb-4">
-                    La sección SOS incluye un botón de donación vía <strong>PayPal</strong>.
-                </p>
-                <ul class="list-disc ml-5 space-y-2 text-xs text-slate-500">
-                    <li>Las donaciones son 100% voluntarias y no desbloquean funciones médicas restringidas.</li>
-                    <li>Toda transacción financiera es gestionada de forma externa por PayPal; <strong>Diabetes Care Pro</strong> no procesa ni almacena números de tarjeta ni datos bancarios.</li>
-                </ul>
-            </section>
+    <h2>2. Servicios de Terceros y Publicidad</h2>
+    <p>Para mantener la aplicación gratuita, utilizamos proveedores de servicios que pueden recopilar información utilizada para identificar su dispositivo:</p>
+    <ul>
+        <li><strong>Google AdMob:</strong> Utiliza identificadores de publicidad para mostrar anuncios personalizados. <a href="https://policies.google.com/privacy" target="_blank">Ver privacidad de Google</a>.</li>
+        <li><strong>Adsterra / Redes de Anuncios:</strong> Estos servicios pueden utilizar cookies y píxeles para optimizar la entrega de anuncios.</li>
+        <li><strong>PayPal:</strong> Si decide realizar una donación, la transacción se procesa externamente a través de PayPal bajo sus propios términos de privacidad.</li>
+    </ul>
 
-            <!-- Aviso Legal de Salud -->
-            <section class="section-card bg-rose-50 border-2 border-rose-100">
-                <h2 class="text-xl font-black text-rose-900 mb-4 flex items-center gap-3">
-                    <span class="text-rose-600"><i class="fas fa-hand-holding-medical"></i></span>
-                    Aviso Legal (Disclaimer)
-                </h2>
-                <p class="text-sm font-bold text-rose-800 mb-3 uppercase tracking-tight">
-                    IMPORTANTE: Esta aplicación NO es un dispositivo médico.
-                </p>
-                <p class="text-xs text-rose-700 leading-relaxed">
-                    Los datos registrados y los consejos mostrados en la sección de "Bienestar" son meramente informativos. <strong>No utilice esta aplicación para realizar diagnósticos o cambiar su tratamiento médico sin consultar previamente a un profesional de la salud.</strong> El uso de esta aplicación es bajo su propia responsabilidad.
-                </p>
-            </section>
+    <h2>3. Almacenamiento Local (Cookies y Web Storage)</h2>
+    <p>Utilizamos tecnologías como LocalStorage para guardar sus preferencias y registros médicos en su navegador o dispositivo móvil. Usted puede borrar estos datos en cualquier momento limpiando la caché o los datos de la aplicación.</p>
 
-            <!-- Contacto -->
-            <section class="section-card bg-slate-900 text-white border-0 shadow-xl shadow-slate-200">
-                <h2 class="text-lg font-black mb-4 flex items-center gap-3">
-                    <span class="text-sky-400"><i class="fas fa-envelope-open-text"></i></span>
-                    Soporte y Contacto
-                </h2>
-                <p class="text-xs text-slate-400 mb-4">
-                    Para dudas sobre el manejo de sus datos o reportar problemas técnicos, escríbanos a:
-                </p>
-                <a href="mailto:adriancarlos267@gmail.com" class="text-sky-400 font-mono text-sm font-bold hover:underline">
-                    adriancarlos267@gmail.com
-                </a>
-            </section>
+    <h2>4. Permisos de la Aplicación</h2>
+    <p>Podemos solicitar permisos específicos como:</p>
+    <ul>
+        <li><strong>Notificaciones:</strong> Para recordarle la toma de medicamentos.</li>
+        <li><strong>Acceso a Internet:</strong> Necesario para cargar los anuncios y procesar donaciones.</li>
+    </ul>
 
-        </div>
+    <h2>5. Seguridad de los Datos</h2>
+    <p>Dado que sus datos de salud se almacenan localmente, la seguridad de los mismos depende de la seguridad de su dispositivo. Le recomendamos proteger su teléfono con métodos de bloqueo biométricos o códigos PIN.</p>
 
-        <!-- Footer -->
-        <footer class="mt-12 text-center">
-            <p class="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em]">
-                © 2026 Diabetes Care Pro • Salud y Privacidad
-            </p>
-        </footer>
+    <h2>6. Cambios en esta Política</h2>
+    <p>Podemos actualizar nuestra Política de Privacidad periódicamente. Se le notificará de cualquier cambio publicando la nueva política en esta página.</p>
+
+    <h2>7. Contacto</h2>
+    <p>Si tiene preguntas sobre esta política, puede contactarnos a través de los canales oficiales de soporte en la tienda de aplicaciones donde descargó HiperControl Pro.</p>
+
+    <div class="footer">
+        <p>&copy; 2026 HiperControl Pro - Todos los derechos reservados.</p>
     </div>
+</div>
 
-    <!-- FontAwesome para los iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </body>
 </html>
+
